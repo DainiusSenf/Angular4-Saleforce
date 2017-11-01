@@ -1,0 +1,10 @@
+.ssh/
+.tmp/
+build/
+config.js
+node_modules/
+vendor/
+typings/
+*.sublime-workspace
+*.sublime-project
+.vscode
