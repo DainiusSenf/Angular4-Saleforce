@@ -4,6 +4,7 @@ import { HomeComponent } from './components/index';
 import { ContactComponent, CreateContactComponent } from './components/index';
 
 import { SalesforceResolver } from './resolves/index';
+import  { RootFancyGridComponent } from './components/index';
 
 const appRoutes: Routes = [
   {
@@ -28,6 +29,13 @@ const appRoutes: Routes = [
   {
       path: 'contact/new',
       component: CreateContactComponent,
+      resolve: {
+          sfdc: SalesforceResolver
+      }
+  },
+  {
+      path: 'fancyGrid',
+      component: RootFancyGridComponent,
       resolve: {
           sfdc: SalesforceResolver
       }

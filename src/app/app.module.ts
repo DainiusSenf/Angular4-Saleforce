@@ -12,7 +12,9 @@ import { SalesforceResolver } from './resolves/index';
 import { ContentEditableModelDirective } from './directives/contentEditableModel.directive';
 import { GravatarDirective } from './directives/gravatar.directive';
 
-import { NewlineToBreakPipe, KeysPipe } from './pipes/index'
+import { NewlineToBreakPipe, KeysPipe } from './pipes/index';
+import { FancyGridComponent } from './components/fancy-grid/fancy-grid.component';
+import { RootFancyGridComponent } from './components/root-fancy-grid/root-fancy-grid.component';
 
 @NgModule({
     imports: [
@@ -30,7 +32,9 @@ import { NewlineToBreakPipe, KeysPipe } from './pipes/index'
         ContentEditableModelDirective,
         GravatarDirective,
         NewlineToBreakPipe,
-        KeysPipe
+        KeysPipe,
+        FancyGridComponent,
+        RootFancyGridComponent
     ],
     providers: [
         SalesforceService,

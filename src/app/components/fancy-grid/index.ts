@@ -1,0 +1,1 @@
+export { FancyGridComponent } from './fancy-grid.component';
